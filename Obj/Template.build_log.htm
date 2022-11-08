@@ -1,0 +1,121 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=32B1Q-N7GPI-NNFAF-6HVQY-QP61Q-ZQZ0J
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.28.0.0
+Toolchain Path:  D:\keil55555\keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.31.18.0
+Dialog DLL:      TCM.DLL V1.36.2.0
+ 
+<h2>Project:</h2>
+C:\Users\lenovo\Desktop\7组程序\自动售货机\Template.uvprojx
+Project File Date:  10/16/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\keil55555\keil5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_it.c...
+compiling stm32f10x_rcc.c...
+compiling main.c...
+.\APP\led\led.h(21): warning:  #1295-D: Deprecated declaration led_on - give arg types
+  extern void led_on();
+.\APP\led\led.h(22): warning:  #1295-D: Deprecated declaration led_off - give arg types
+  extern void led_off();
+D:\AAA\mysql-8.0.29-winx64\include\errmsg.h(139): warning:  #260-D: explicit type is missing ("int" assumed)
+  static inline const char *ER_CLIENT(int client_errno) {
+D:\AAA\mysql-8.0.29-winx64\include\errmsg.h(139): error:  #65: expected a ";"
+  static inline const char *ER_CLIENT(int client_errno) {
+D:\AAA\mysql-8.0.29-winx64\include\errmsg.h(143): warning:  #12-D: parsing restarts here after previous syntax error
+  };
+User\main.c(11): warning:  #161-D: unrecognized #pragma
+  #pragma comment(lib, "libmysql.lib")
+User\main.c(54): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(dis_shuliang_Coca_Cola ,"num:%2d",shuliang_Coca_Cola);
+User\main.c(55): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf(dis_shuliang_Pepsi ,"num:%2d",shuliang_Pepsi);		
+User\main.c(27): warning:  #177-D: variable "i"  was declared but never referenced
+  	u8 i;
+User\main.c: 8 warnings, 1 error
+compiling stm32f10x_tim.c...
+compiling stm32f10x_wwdg.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_spi.c...
+compiling system_stm32f10x.c...
+compiling key.c...
+compiling core_cm3.c...
+compiling led.c...
+APP\led\led.h(21): warning:  #1295-D: Deprecated declaration led_on - give arg types
+  extern void led_on();
+APP\led\led.h(22): warning:  #1295-D: Deprecated declaration led_off - give arg types
+  extern void led_off();
+APP\led\led.c: 2 warnings, 0 errors
+compiling tftlcd.c...
+APP\tftlcd\tftlcd.c(1118): warning:  #111-D: statement is unreachable
+   	return r;						
+APP\tftlcd\tftlcd.c(957): warning:  #177-D: variable "r1"  was declared but never referenced
+  	u16 r1,r2,r3;
+APP\tftlcd\tftlcd.c(957): warning:  #177-D: variable "r2"  was declared but never referenced
+  	u16 r1,r2,r3;
+APP\tftlcd\tftlcd.c(957): warning:  #177-D: variable "r3"  was declared but never referenced
+  	u16 r1,r2,r3;
+APP\tftlcd\tftlcd.c(958): warning:  #177-D: variable "value"  was declared but never referenced
+  	u32 value;
+APP\tftlcd\tftlcd.c(1216): warning:  #177-D: variable "i"  was declared but never referenced
+  	u16 i;
+APP\tftlcd\tftlcd.c: 6 warnings, 0 errors
+compiling time.c...
+.\APP\led\led.h(21): warning:  #1295-D: Deprecated declaration led_on - give arg types
+  extern void led_on();
+.\APP\led\led.h(22): warning:  #1295-D: Deprecated declaration led_off - give arg types
+  extern void led_off();
+APP\time\time.c: 2 warnings, 0 errors
+compiling ball.c...
+compiling beep.c...
+compiling system.c...
+compiling SysTick.c...
+compiling usart.c...
+".\Obj\Template.axf" - 1 Error(s), 18 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.1.0.5.pack
+                Keil.STM32F1xx_DFP.1.0.5
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  D:\keil55555\keil5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
