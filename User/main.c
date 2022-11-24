@@ -52,8 +52,8 @@ int main()
 	
 		sprintf(dis_shuliang_Coca_Cola ,"num:%2d",shuliang_Coca_Cola);
 		sprintf(dis_shuliang_Pepsi ,"num:%2d",shuliang_Pepsi);		
-	LCD_ShowString(140,10,tftlcd_data.width,tftlcd_data.height,24,dis_shuliang_Coca_Cola);
-	LCD_ShowString(140,50,tftlcd_data.width,tftlcd_data.height,24,dis_shuliang_Pepsi);
+		LCD_ShowString(140,10,tftlcd_data.width,tftlcd_data.height,24,dis_shuliang_Coca_Cola);
+		LCD_ShowString(140,50,tftlcd_data.width,tftlcd_data.height,24,dis_shuliang_Pepsi);
 	
 	
 		LCD_ShowString(240,10,tftlcd_data.width,tftlcd_data.height,24,"RMB:3");
