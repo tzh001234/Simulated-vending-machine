@@ -45,12 +45,12 @@ int main()  //主函数
 	
 	while(1)
 	{
-		LCD_ShowString(10,10,tftlcd_data.width,tftlcd_data.height,24,"Coca_Cola");      //显示商品信息
+		LCD_ShowString(10,10,tftlcd_data.width,tftlcd_data.height,24,"Coca_Cola");      //显示商品的名称
 		LCD_ShowString(10,50,tftlcd_data.width,tftlcd_data.height,24,"Pepsi");
 
 
 	
-		sprintf(dis_shuliang_Coca_Cola ,"num:%2d",shuliang_Coca_Cola);        //商品数量
+		sprintf(dis_shuliang_Coca_Cola ,"num:%2d",shuliang_Coca_Cola);        //显示商品数量
 		sprintf(dis_shuliang_Pepsi ,"num:%2d",shuliang_Pepsi);		
 		LCD_ShowString(140,10,tftlcd_data.width,tftlcd_data.height,24,dis_shuliang_Coca_Cola);
 		LCD_ShowString(140,50,tftlcd_data.width,tftlcd_data.height,24,dis_shuliang_Pepsi);
