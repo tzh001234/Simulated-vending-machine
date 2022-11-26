@@ -56,7 +56,7 @@ int main()  //主函数
 		LCD_ShowString(140,50,tftlcd_data.width,tftlcd_data.height,24,dis_shuliang_Pepsi);
 	
 	
-		LCD_ShowString(240,10,tftlcd_data.width,tftlcd_data.height,24,"RMB:3");       //商品价格
+		LCD_ShowString(240,10,tftlcd_data.width,tftlcd_data.height,24,"RMB:3");       //显示商品的价格
 		LCD_ShowString(240,50,tftlcd_data.width,tftlcd_data.height,24,"RMB:3");
 		
 		
