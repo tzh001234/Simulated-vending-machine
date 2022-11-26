@@ -151,7 +151,7 @@ int main()  //主函数
 				{
 					if(KEY0==0)
 					{
-						goto fanhui;
+						goto fanhui;   //跳转到程序底端
 					}
 				}
 			}
@@ -169,6 +169,6 @@ int main()  //主函数
 			}
 			xuanze_flag=0;
 		}
-		fanhui:		delay_ms(10);		
+		fanhui:		delay_ms(10);	 //延时一下	
 	}
 }
