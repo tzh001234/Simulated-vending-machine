@@ -36,7 +36,7 @@ int main()
 	
 	LCD_Clear(BLUE);
 	
-	for (j=0;j<229;j=j+12)
+	for (j=0;j<229;j=j+12)  //清空页面
 	{
 		LCD_ShowString(0,2*j,tftlcd_data.width,tftlcd_data.height,24, "                           ");
 	}
@@ -45,7 +45,7 @@ int main()
 	
 	while(1)
 	{
-		LCD_ShowString(10,10,tftlcd_data.width,tftlcd_data.height,24,"Coca_Cola");
+		LCD_ShowString(10,10,tftlcd_data.width,tftlcd_data.height,24,"Coca_Cola"); //显示商品信息
 		LCD_ShowString(10,50,tftlcd_data.width,tftlcd_data.height,24,"Pepsi");
 
 
