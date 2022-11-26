@@ -71,7 +71,7 @@ int main()  //主函数
 		}
 		
 		
-		if(xuanze_flag==1)
+		if(xuanze_flag==1)       //检测是否按下选择键
 		{
 			LCD_ShowString(10,130,tftlcd_data.width,tftlcd_data.height,24,"Coca_Cola  RMB:3 ");
 			LCD_ShowString(10,190,tftlcd_data.width,tftlcd_data.height,24,"Confirm payment?  ");
@@ -85,7 +85,7 @@ int main()  //主函数
 		}	
 
 
-		if(KEY0==0)
+		if(KEY0==0)       //检测是否按下KEY0键
 		{
 			while(KEY0==0);
 			xuanze_flag=0;
