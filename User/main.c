@@ -17,24 +17,24 @@ int shuliang_Pepsi=2;
 unsigned char dis_shuliang_Coca_Cola[30];
 unsigned char dis_shuliang_Pepsi[30];
 
-int xuanze_flag=0;
+int xuanze_flag=0;   //控制选择按键
 
 
 
-int main()
+int main()  //主函数
 {
 	u8 i;
 	u16 j;
 	
 	SysTick_Init(72);
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);  
-	LED_Init();
+	LED_Init();                //各种初始化函数
 	USART1_Init(115200);
 	TFTLCD_Init();			
-	KEY_Init();
+	KEY_Init(); 
 	BEEP_Init();
 	
-	LCD_Clear(BLUE);
+	LCD_Clear(BLUE);  //选择lcd屏幕颜色
 	
 	for (j=0;j<229;j=j+12)  //清空页面
 	{
