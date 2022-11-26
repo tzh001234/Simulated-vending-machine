@@ -45,22 +45,22 @@ int main()  //主函数
 	
 	while(1)
 	{
-		LCD_ShowString(10,10,tftlcd_data.width,tftlcd_data.height,24,"Coca_Cola"); //显示商品信息
+		LCD_ShowString(10,10,tftlcd_data.width,tftlcd_data.height,24,"Coca_Cola");      //显示商品信息
 		LCD_ShowString(10,50,tftlcd_data.width,tftlcd_data.height,24,"Pepsi");
 
 
 	
-		sprintf(dis_shuliang_Coca_Cola ,"num:%2d",shuliang_Coca_Cola);
+		sprintf(dis_shuliang_Coca_Cola ,"num:%2d",shuliang_Coca_Cola);        //商品数量
 		sprintf(dis_shuliang_Pepsi ,"num:%2d",shuliang_Pepsi);		
 		LCD_ShowString(140,10,tftlcd_data.width,tftlcd_data.height,24,dis_shuliang_Coca_Cola);
 		LCD_ShowString(140,50,tftlcd_data.width,tftlcd_data.height,24,dis_shuliang_Pepsi);
 	
 	
-		LCD_ShowString(240,10,tftlcd_data.width,tftlcd_data.height,24,"RMB:3");
+		LCD_ShowString(240,10,tftlcd_data.width,tftlcd_data.height,24,"RMB:3");       //商品价格
 		LCD_ShowString(240,50,tftlcd_data.width,tftlcd_data.height,24,"RMB:3");
 		
 		
-		if(KEY_UP==1)
+		if(KEY_UP==1)       //检测是否按下KEY_UP键
 		{
 			while(KEY_UP==1);
 			xuanze_flag++;
