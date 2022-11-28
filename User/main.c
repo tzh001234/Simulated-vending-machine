@@ -8,7 +8,6 @@
 #include "beep.h"
 
 
-
 int shuliang_Coca_Cola=100;
 int shuliang_Pepsi=2;
 
