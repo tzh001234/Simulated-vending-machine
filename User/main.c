@@ -27,14 +27,11 @@ int main(){  //主函数
 	BEEP_Init();
 	LCD_Clear(BLUE);  //选择lcd屏幕颜色
 	for (j=0;j<229;j=j+12) { //清空页面
-	
-	LCD_ShowString(0,2*j,tftlcd_data.width,tftlcd_data.height,24, "                           ");
+		LCD_ShowString(0,2*j,tftlcd_data.width,tftlcd_data.height,24, "                           ");
 	}
 	LCD_ShowString(0,408,tftlcd_data.width,tftlcd_data.height,24,   "          HELLO!           ");
 	
-	
 	while(1){
-	
 		LCD_ShowString(10,10,tftlcd_data.width,tftlcd_data.height,24,"Coca_Cola");      //显示商品的名称
 		LCD_ShowString(10,50,tftlcd_data.width,tftlcd_data.height,24,"Pepsi");
 	
@@ -108,7 +105,6 @@ int main(){  //主函数
 						delay_ms(1500);
 						BEEP=!BEEP;
 						shuliang_Pepsi=2;
-						
 					}else{
 						LCD_ShowString(70,220,tftlcd_data.width,tftlcd_data.height,24,"Payment success");
 						LCD_ShowString(100,260,tftlcd_data.width,tftlcd_data.height,24,"Thank You~");
