@@ -19,8 +19,8 @@ int xuanze_flag=0;   //控制选择按键
 
 
 
-int main()  //主函数
-{
+int main(){  //主函数
+
 	u8 i;
 	u16 j;
 	
@@ -34,36 +34,30 @@ int main()  //主函数
 	
 	LCD_Clear(BLUE);  //选择lcd屏幕颜色
 	
-	for (j=0;j<229;j=j+12)  //清空页面
-	{
+	for (j=0;j<229;j=j+12) { //清空页面
+	
 		LCD_ShowString(0,2*j,tftlcd_data.width,tftlcd_data.height,24, "                           ");
 	}
 	LCD_ShowString(0,408,tftlcd_data.width,tftlcd_data.height,24,   "          HELLO!           ");
 	
 	
-	while(1)
-	{
+	while(1){
+	
 		LCD_ShowString(10,10,tftlcd_data.width,tftlcd_data.height,24,"Coca_Cola");      //显示商品的名称
 		LCD_ShowString(10,50,tftlcd_data.width,tftlcd_data.height,24,"Pepsi");
-
-
 	
 		sprintf(dis_shuliang_Coca_Cola ,"num:%2d",shuliang_Coca_Cola);        //显示商品的数量
 		sprintf(dis_shuliang_Pepsi ,"num:%2d",shuliang_Pepsi);		
 		LCD_ShowString(140,10,tftlcd_data.width,tftlcd_data.height,24,dis_shuliang_Coca_Cola);
 		LCD_ShowString(140,50,tftlcd_data.width,tftlcd_data.height,24,dis_shuliang_Pepsi);
 	
-	
 		LCD_ShowString(240,10,tftlcd_data.width,tftlcd_data.height,24,"RMB:3");       //显示商品的价格
 		LCD_ShowString(240,50,tftlcd_data.width,tftlcd_data.height,24,"RMB:3");
 		
-		
-		if(KEY_UP==1)       //检测是否按下KEY_UP键
-		{
+		if(KEY_UP==1){       //检测是否按下KEY_UP键
 			while(KEY_UP==1);
 			xuanze_flag++;
-			if(xuanze_flag>2)
-			{
+			if(xuanze_flag>2){
 				xuanze_flag=1;
 			}
 		}
