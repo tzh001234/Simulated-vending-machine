@@ -7,23 +7,17 @@
 #include "key.h"
 #include "beep.h"
 
-
 int shuliang_Coca_Cola=100;
 int shuliang_Pepsi=2;
-
 
 unsigned char dis_shuliang_Coca_Cola[30];
 unsigned char dis_shuliang_Pepsi[30];
 
 int xuanze_flag=0;   //控制选择按键
 
-
-
 int main(){  //主函数
-
 	u8 i;
 	u16 j;
-	
 	SysTick_Init(72);
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);  
 	LED_Init();                //各种初始化函数
@@ -31,12 +25,10 @@ int main(){  //主函数
 	TFTLCD_Init();			
 	KEY_Init(); 
 	BEEP_Init();
-	
 	LCD_Clear(BLUE);  //选择lcd屏幕颜色
-	
 	for (j=0;j<229;j=j+12) { //清空页面
 	
-		LCD_ShowString(0,2*j,tftlcd_data.width,tftlcd_data.height,24, "                           ");
+	LCD_ShowString(0,2*j,tftlcd_data.width,tftlcd_data.height,24, "                           ");
 	}
 	LCD_ShowString(0,408,tftlcd_data.width,tftlcd_data.height,24,   "          HELLO!           ");
 	
@@ -63,22 +55,18 @@ int main(){  //主函数
 		}
 		
 		
-		if(xuanze_flag==1)       //检测是否按下选择键
-		{
+		if(xuanze_flag==1){       //检测是否按下选择键
 			LCD_ShowString(10,130,tftlcd_data.width,tftlcd_data.height,24,"Coca_Cola  RMB:3 ");
 			LCD_ShowString(10,190,tftlcd_data.width,tftlcd_data.height,24,"Confirm payment?  ");
 		}
 
-
-		if(xuanze_flag==2)
-		{
+		if(xuanze_flag==2){
 			LCD_ShowString(10,130,tftlcd_data.width,tftlcd_data.height,24,"Pepsi      RMB:3 ");
 			LCD_ShowString(10,190,tftlcd_data.width,tftlcd_data.height,24,"Confirm payment?  ");
 		}	
 
 
-		if(KEY0==0)       //检测是否按下KEY0键
-		{
+		if(KEY0==0) {      //检测是否按下KEY0键
 			while(KEY0==0);
 			xuanze_flag=0;
 			LCD_ShowString(10,130,tftlcd_data.width,tftlcd_data.height,24,"                           ");
