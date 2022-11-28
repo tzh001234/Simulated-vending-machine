@@ -75,29 +75,23 @@ int main(){  //主函数
 			LCD_ShowString(10,260,tftlcd_data.width,tftlcd_data.height,24,"                           ");
 		}
 
-		if(KEY1==0)
-		{
+		if(KEY1==0){
 			while(KEY1==0);
-			
-			
 			if(xuanze_flag!=0){
 				LCD_ShowString(10,10 ,tftlcd_data.width,tftlcd_data.height,24,"                           ");
 				LCD_ShowString(10,50 ,tftlcd_data.width,tftlcd_data.height,24,"                           ");
 				LCD_ShowString(10,130 ,tftlcd_data.width,tftlcd_data.height,24,"                           ");
 				LCD_ShowString(10,190,tftlcd_data.width,tftlcd_data.height,24,"                           ");
-				if(xuanze_flag==1)
-				{
+				if(xuanze_flag==1){
 					shuliang_Coca_Cola--;
-					if(shuliang_Coca_Cola<0)
-					{
+					if(shuliang_Coca_Cola<0){
 						LCD_ShowString(10,220,tftlcd_data.width,tftlcd_data.height,24,"Coca_Cola is not enough");
 						LCD_ShowString(100,260,tftlcd_data.width,tftlcd_data.height,24,"Please Add");
 						BEEP=!BEEP;
 						delay_ms(1000);
 						BEEP=!BEEP;
 						shuliang_Coca_Cola=100;
-					}else
-					{
+					}else{
 						LCD_ShowString(70,220,tftlcd_data.width,tftlcd_data.height,24,"Payment success");
 						LCD_ShowString(100,260,tftlcd_data.width,tftlcd_data.height,24,"Thank You~");
 						led_on(0);
@@ -105,11 +99,9 @@ int main(){  //主函数
 						led_off(0);
 					}
 				}
-				if(xuanze_flag==2)
-				{
+				if(xuanze_flag==2){
 					shuliang_Pepsi--;
-					if(shuliang_Pepsi<0)
-					{
+					if(shuliang_Pepsi<0){
 						LCD_ShowString(48,220,tftlcd_data.width,tftlcd_data.height,24,"Pepsi is not enough");
 						LCD_ShowString(100,260,tftlcd_data.width,tftlcd_data.height,24,"Please Add");
 						BEEP=!BEEP;
@@ -117,8 +109,7 @@ int main(){  //主函数
 						BEEP=!BEEP;
 						shuliang_Pepsi=2;
 						
-					}else
-						{
+					}else{
 						LCD_ShowString(70,220,tftlcd_data.width,tftlcd_data.height,24,"Payment success");
 						LCD_ShowString(100,260,tftlcd_data.width,tftlcd_data.height,24,"Thank You~");
 						led_on(1);
@@ -127,10 +118,8 @@ int main(){  //主函数
 					}
 				}
 				xuanze_flag=0;
-				while(1)
-				{
-					if(KEY0==0)
-					{
+				while(1){
+					if(KEY0==0){
 						goto fanhui;   //跳转到程序底端
 					}
 				}
@@ -139,10 +128,8 @@ int main(){  //主函数
 				LCD_ShowString(10,10 ,tftlcd_data.width,tftlcd_data.height,24,"                           ");
 				LCD_ShowString(10,50 ,tftlcd_data.width,tftlcd_data.height,24,"                           ");
 				LCD_ShowString(30,220,tftlcd_data.width,tftlcd_data.height,24,"Please chose commodity");
-				while(1)
-				{
-					if(KEY0==0)
-					{
+				while(1){
+					if(KEY0==0){
 						goto fanhui;
 					}
 				}
